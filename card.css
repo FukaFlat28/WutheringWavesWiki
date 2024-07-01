@@ -121,7 +121,7 @@ div.card > span {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (max-width: 300px){
+@media (max-width: 500px){
     div.card-container{
         grid-template-columns: repeat(2, 1fr);
     }
