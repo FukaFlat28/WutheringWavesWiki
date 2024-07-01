@@ -1,0 +1,113 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Table*/
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+table img{
+    width: 25px;
+    height: 25px;
+}
+table .table-img{
+    width: 40px;
+    height: 40px;
+}
+
+th{
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+}
+
+td{
+    background-color: rgba(85, 85, 85, 0.651);
+    text-align: center;
+    border-radius: 15px;
+}
+/*Table*/
+.main#blurr.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+#popups > h1{
+    text-align: center;
+    margin: 5px;
+}
+#popups > a{
+    position: fixed;
+    padding: 5px 20px;
+    display: flex;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+#popups > a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+
+#popups {
+    color: white;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vh;
+    padding: 50px;
+    box-shadow: 0 0 6px rgba(206, 205, 205, 0.527);
+    background-color: rgba(61, 61, 61);
+    width: 100%;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#popups.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+/*About*/
+.about{
+    left: 50%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.about h3{
+    margin-top: 30px;
+    border-top: 2px solid white;
+}
+.about h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.about h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.about img{
+    width: 180px;
+    height: 180px;
+}
+.about p{
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}

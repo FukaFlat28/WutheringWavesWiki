@@ -1,0 +1,124 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Fonts*/
+
+
+
+
+
+/*Characters*/
+div#characters {
+    width: 100%;
+    display: block;
+}
+
+div.card-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 97%;
+    gap: 1rem;
+    padding-top: 1rem;
+
+}
+
+div.card {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(206, 205, 205, 0.527);
+    transition: 0.2s;
+}
+div.characterss div.card:hover{
+    transition: 0.5s;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+div.card > div.characteristics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .35rem;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.weapon-char{
+    height: 25px;
+    aspect-ratio: 1;
+    filter: drop-shadow(0 0 5px black);
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: .35rem;
+    
+    display: flex;
+}
+div.card > div.characteristics > img {
+    height: 25px;
+    aspect-ratio: 1;
+    filter: drop-shadow(0 0 5px black);
+}
+div.card > img {
+ 
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+div.card > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: .27rem;
+}
+/*Card colors rarity*/
+.rarity-5{
+    background: linear-gradient( 55deg , rgba(224, 144, 24, 0.521),  rgb(238, 151, 20));
+}
+
+.rarity-4{
+    background: linear-gradient( 55deg ,rgba(202, 21, 193, 0.5),  rgba(189, 10, 180, 0.945));
+}
+
+.rarity-3{
+    background: linear-gradient( 55deg ,rgba(13, 90, 141, 0.596),  rgb(8, 113, 184));
+}
+.rarity-2{
+    background: linear-gradient( 55deg , rgba(32, 138, 5, 0.349),  rgba(35, 158, 4, 0.747));
+}
+.rarity-1{
+    background: linear-gradient( 55deg ,rgba(32, 32, 32, 0.562),  rgb(105, 105, 105));
+}
+/*Card colors rarity*/
+
+@media (max-width: 920px){
+    div.card-container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 670px){
+    div.card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*Characters*/

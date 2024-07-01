@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Fonts*/
+.footer-container{
+    width: 100%;
+    padding: 40px 30px 20px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: default;
+    
+}
+.footer-container span{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2px;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer-container span:hover{
+    background-color: white;
+    color: black;
+    padding: 4px;
+    transition: 0.5s;
+}
+.footer-container h2{
+    font-size: 18px;
+    color: white;
+    padding: 6px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer-container p{
+    font-weight: bold;
+    margin-top: 25px;
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+footer{
+    background-color: #1a1a1ac4;
+}
+.social-icons{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-icons a{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 50%;
+}
+.social-icons i{
+    font-size: 25px;
+    color: black;
+    opacity: 0.9;
+}
+.social-icons a:hover{
+    transform:scale(1.2);
+    background-color: #1a1a1ac4;
+
+}
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+    transform:scale(1.5);
+}
+.footer-bottom{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
